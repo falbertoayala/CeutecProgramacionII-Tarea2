@@ -56,6 +56,7 @@ public class Estudiantes {
             
         } catch (SQLException ex) {
             Logger.getLogger(Estudiantes.class.getName()).log(Level.SEVERE, null, ex);
+            disconnectDB(conn);
         }
         return rs;
     }
